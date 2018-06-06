@@ -1,0 +1,16 @@
+;
+; BIND data file for cutie.pi public zone
+;
+$TTL    604800
+cutie.pi.       IN      SOA     ns1.cutie.pi. hostmaster.cutie.pi. (
+                     2018052801         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+cutie.pi.       IN      NS      ns1.cutie.pi.
+ns1             IN      A       172.23.29.130
+
+cutie.pi.       IN      MX      10 mail.cutie.pi.
+mail            IN      A       172.23.29.131

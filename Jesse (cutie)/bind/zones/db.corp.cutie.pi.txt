@@ -1,0 +1,19 @@
+;
+; BIND data file for corp.cutie.pi private zone
+;
+$TTL    604800
+corp.cutie.pi.  IN      SOA     cutie.corp.cutie.pi. hostmaster.corp.cutie.pi. (
+                     2018052801         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+corp.cutie.pi.  IN      NS      cutie.corp.cutie.pi.
+cutie           IN      A       172.23.29.1
+
+corp.cutie.pi.  IN      MX      10 mail.corp.cutie.pi.
+mail            IN      A       172.23.29.66
+
+qt              IN      A       172.23.30.129
+qtea            IN      A       172.23.31.129
