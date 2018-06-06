@@ -1,0 +1,20 @@
+;
+; BIND data file for corp.qt.pi
+;
+$TTL    604800
+corp.qt.pi.     IN      SOA     qt.corp.qt.pi. hostmaster.qt.pi. (
+                     2018051402         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+corp.qt.pi.     IN      NS      qt.corp.qt.pi.
+qt              IN      A       172.23.30.1
+
+corp.qt.pi.     IN      MX      10 mail.corp.qt.pi.
+mail            IN      A       172.23.30.66
+
+; A Records
+cutie                   IN      A       172.23.29.129
+qtea                    IN      A       172.23.31.129
