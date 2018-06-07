@@ -1,0 +1,21 @@
+;
+; BIND data file for corp.qtea.pi private zone
+;
+$TTL	604800
+corp.qtea.pi.	IN	SOA	qtea.corp.qtea.pi. hostmaster.corp.qtea.pi. (
+		     2018052801		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+; NS Records
+corp.qtea.pi.	IN	NS	qtea.corp.qtea.pi.
+
+; A Record for Name Servers
+qtea		IN	A	172.23.31.1
+
+; MX Record
+corp.qtea.pi.	IN	MX	10 mail.corp.qtea.pi.
+
+; A Records
+mail		IN	A	172.23.31.66
